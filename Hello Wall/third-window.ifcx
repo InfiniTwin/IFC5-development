@@ -1,0 +1,60 @@
+[
+  {
+    "comment": "1. Define a new window instance.",
+    "def": "class",
+    "type": "UsdGeom:Xform",
+    "name": "Third_Window_ID",
+    "inherits": [
+      "</N25503984660543a18597eae657ff5bea>"
+    ]
+  },
+  {
+    "comment": "2. Set window instance transform.",
+    "def": "over",
+    "name": "Third_Window_ID",
+    "attributes": {
+      "xformOp": {
+        "transform": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            8.13,
+            0,
+            1,
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "comment": "3. Add window instance as child of Wall.",
+    "def": "over",
+    "name": "N93791d5d5beb437bb8ec2f1f0ba4bf3b",
+    "children": [
+      {
+        "def": "def",
+        "name": "Third_Window",
+        "inherits": [
+          "</Third_Window_ID>"
+        ]
+      }
+    ]
+  }
+]
